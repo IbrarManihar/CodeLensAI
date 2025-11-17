@@ -1,0 +1,109 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body, #root {
+   height: 100%;
+   width: 100%;
+}
+
+main {
+   height: 100%;
+   width: 100%;
+   padding: 1.5rem;
+   display: flex;
+   gap: 1rem;
+   background: #3a3a3a;
+}
+
+.left, .right {
+   height: 100%;
+   flex-basis: 50%;
+   border-radius: 0.7rem;
+   border: 3px solid white;
+}
+
+.review-btn {
+   background: #0cb222;
+   position: absolute;
+   bottom: 5%;
+   right: 52%;
+   color: aliceblue;
+   padding: 0.5rem;
+   font-size: 1rem;
+   cursor: pointer;
+   border-radius: 1rem;
+}
+
+.review-btn:hover {
+   background: #0ca519;
+   transition: ease-in;
+}
+
+.right {
+   border: 3px solid white;
+   color: white;
+   padding: 2rem;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   overflow-y: auto; /* Only vertical scrolling */
+   overflow-x: hidden; /* Prevent horizontal scrolling */
+   position: relative;
+}
+
+.code {
+   height: 100%;
+   width: 100%;
+}
+
+.markdown {
+   width: 100%;
+   height: 100%;
+}
+
+.right {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.right strong {
+   margin-bottom: 5rem;
+}
+
+.loader-wrapper {
+   position: absolute;
+   top: 50%;
+   left: 75%;
+   transform: translate(-50%, -50%);
+   color: white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 455px) {
+   main {
+      flex-direction: column;
+   }
+   .left, .right {
+      flex-basis: 50%;
+      border: 2px solid white;
+   }
+
+   .review-btn{
+      bottom: 52%;
+      right: 12%;
+      padding: 0.3rem;
+      font-size: 0.6rem;
+   }
+
+   .loader-wrapper{
+      top: 75%;
+      left: 50%;
+   }
+
+   .right{
+        font-size: smaller;
+        padding: 0.3rem;
+   }
+}
