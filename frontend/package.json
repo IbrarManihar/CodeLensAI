@@ -15,7 +15,6 @@
     "prismjs": "^1.29.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-loader-spinner": "^6.1.6",
     "react-markdown": "^10.1.0",
     "react-simple-code-editor": "^0.14.1"
   },
